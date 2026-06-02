@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,38 +55,23 @@ header{
 }
 
 .hero{
-    position:relative;
-    min-height:650px;
+    min-height:550px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    color:white;
-    background:
-        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-        url('Group1.jpeg');
-    background-size:cover;
-    background-position:center;
+    background:white;
+    border-bottom:4px solid var(--lions-gold);
 }
 
 .hero-content{
-    padding:40px 20px;
+    padding:60px 20px;
+    max-width:900px;
 }
 
 .hero-logo{
-    width:220px;
+    width:320px;
     max-width:80%;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-.hero h2{
-    font-size:1.5rem;
-    font-weight:normal;
     margin-bottom:25px;
 }
 
@@ -93,14 +79,28 @@ header{
     display:inline-block;
     background:var(--teal);
     color:white;
-    padding:12px 20px;
+    padding:12px 24px;
     border-radius:999px;
     font-weight:bold;
-    margin-bottom:20px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    color:var(--lions-blue);
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:1.7rem;
+    color:var(--dark);
+    font-weight:normal;
+    margin-bottom:25px;
 }
 
 .event-details{
     font-size:1.2rem;
+    color:var(--dark);
 }
 
 section{
@@ -149,7 +149,7 @@ section{
 }
 
 .schedule{
-    background:var(--light);
+    background:#f5f7fa;
 }
 
 .schedule-box{
@@ -172,7 +172,7 @@ section{
 
 .placeholder{
     text-align:center;
-    background:var(--light);
+    background:#f5f7fa;
     padding:30px;
     border-radius:10px;
 }
@@ -200,6 +200,15 @@ footer img{
 }
 
 @media(max-width:768px){
+
+    .hero{
+        min-height:auto;
+    }
+
+    .hero-logo{
+        width:240px;
+    }
+
     .hero h1{
         font-size:2.2rem;
     }
@@ -227,9 +236,9 @@ footer img{
 
         <div class="badge">Registration Opening Soon</div>
 
-        <h1>Strides Against Diabetes</h1>
+        <h1>Strides Against Diabetes 5K Run/Walk</h1>
 
-        <h2>14th Annual 5K Run/Walk</h2>
+        <h2>14th Annual Event</h2>
 
         <div class="event-details">
             Saturday, August 8, 2026<br>
@@ -245,8 +254,9 @@ footer img{
     <div class="about">
         The Strides Against Diabetes 5K Run/Walk is an annual community fundraiser
         supporting diabetes awareness and healthy living initiatives throughout the
-        Baraboo area. The event is hosted by the Baraboo Lions Club in conjunction
-        with the SJS Sweet Corn Fest.
+        Baraboo area. Hosted by the Baraboo Lions Club in conjunction with the
+        SJS Sweet Corn Fest, the event welcomes runners, walkers, families, and
+        community supporters of all ages.
     </div>
 </section>
 
@@ -273,7 +283,7 @@ footer img{
         <div class="card">
             <h3>Family Registration</h3>
             <div class="price">$75</div>
-            <p>Includes free shirts for first four registrants</p>
+            <p>Includes free shirts for the first four registrants</p>
         </div>
 
     </div>
@@ -292,6 +302,11 @@ footer img{
         <div class="schedule-item">
             <strong>9:30 AM</strong><br>
             Race Begins
+        </div>
+
+        <div class="schedule-item">
+            <strong>Location</strong><br>
+            Sauk County Fairgrounds, Baraboo, Wisconsin
         </div>
 
     </div>
@@ -335,3 +350,4 @@ footer img{
 
 </body>
 </html>
+```
