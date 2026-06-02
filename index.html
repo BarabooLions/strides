@@ -12,8 +12,8 @@
     --lions-blue:#0054A6;
     --lions-gold:#F2C100;
     --teal:#1F9D94;
+    --light:#f7f9fc;
     --dark:#1f2937;
-    --light:#f8fafc;
 }
 
 *{
@@ -24,8 +24,8 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    line-height:1.6;
     color:var(--dark);
+    line-height:1.6;
     background:white;
 }
 
@@ -34,102 +34,93 @@ header{
     border-bottom:4px solid var(--lions-gold);
 }
 
-.topbar{
+.header-container{
     max-width:1200px;
     margin:auto;
     padding:15px 20px;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
     gap:15px;
 }
 
-.topbar img{
+.brand img{
     height:60px;
 }
 
-.topbar span{
+.brand-text{
+    font-size:1.3rem;
     font-weight:bold;
     color:var(--lions-blue);
-    font-size:1.1rem;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:var(--lions-blue);
+    text-decoration:none;
+    font-weight:bold;
 }
 
 .hero{
-    min-height:550px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
     text-align:center;
-    background:white;
-    border-bottom:4px solid var(--lions-gold);
-}
-
-.hero-content{
-    padding:60px 20px;
-    max-width:900px;
 }
 
 .hero-logo{
-    width:320px;
-    max-width:80%;
-    margin-bottom:25px;
-}
-
-.badge{
-    display:inline-block;
-    background:var(--teal);
-    color:white;
-    padding:12px 24px;
-    border-radius:999px;
-    font-weight:bold;
-    margin-bottom:25px;
+    width:180px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:3.5rem;
     color:var(--lions-blue);
+    font-size:3rem;
     margin-bottom:10px;
 }
 
 .hero h2{
-    font-size:1.7rem;
-    color:var(--dark);
     font-weight:normal;
-    margin-bottom:25px;
+    margin-bottom:15px;
 }
 
-.event-details{
-    font-size:1.2rem;
-    color:var(--dark);
-}
-
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:70px 20px;
-}
-
-.section-title{
-    text-align:center;
-    color:var(--lions-blue);
-    margin-bottom:40px;
-    font-size:2rem;
-}
-
-.about{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
+.event-info{
     font-size:1.1rem;
+    margin-bottom:20px;
 }
 
-.cards{
+.status{
+    display:inline-block;
+    background:var(--teal);
+    color:white;
+    padding:10px 22px;
+    border-radius:999px;
+    font-weight:bold;
+}
+
+.quick-links{
+    max-width:1100px;
+    margin:auto;
+    padding:10px 20px 50px;
+}
+
+.quick-links-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
 }
 
-.card{
+.quick-link{
     background:white;
     border-top:5px solid var(--lions-blue);
     box-shadow:0 4px 12px rgba(0,0,0,.08);
@@ -137,28 +128,60 @@ section{
     text-align:center;
 }
 
-.card h3{
+.quick-link h3{
     color:var(--lions-blue);
     margin-bottom:10px;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    color:var(--lions-blue);
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.price-card{
+    background:white;
+    border-top:5px solid var(--lions-blue);
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    padding:25px;
+    text-align:center;
+}
+
+.price-card h3{
+    color:var(--lions-blue);
 }
 
 .price{
     font-size:2rem;
     color:var(--teal);
     font-weight:bold;
+    margin-top:10px;
 }
 
 .schedule{
-    background:#f5f7fa;
-}
-
-.schedule-box{
-    max-width:700px;
-    margin:auto;
-    background:white;
-    padding:30px;
+    background:var(--light);
     border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    padding:30px;
 }
 
 .schedule-item{
@@ -171,10 +194,21 @@ section{
 }
 
 .placeholder{
-    text-align:center;
-    background:#f5f7fa;
-    padding:30px;
+    background:var(--light);
     border-radius:10px;
+    padding:30px;
+    text-align:center;
+}
+
+.sponsor-button{
+    display:inline-block;
+    margin-top:20px;
+    background:var(--lions-gold);
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    padding:12px 24px;
+    border-radius:999px;
 }
 
 .contact{
@@ -192,6 +226,7 @@ footer{
     color:white;
     text-align:center;
     padding:40px 20px;
+    margin-top:50px;
 }
 
 footer img{
@@ -201,20 +236,20 @@ footer img{
 
 @media(max-width:768px){
 
-    .hero{
-        min-height:auto;
+    .header-container{
+        justify-content:center;
+        text-align:center;
+        gap:15px;
     }
 
-    .hero-logo{
-        width:240px;
+    nav{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
     }
 
     .hero h1{
         font-size:2.2rem;
-    }
-
-    .hero h2{
-        font-size:1.2rem;
     }
 }
 </style>
@@ -223,76 +258,115 @@ footer img{
 <body>
 
 <header>
-    <div class="topbar">
-        <img src="Lions Logo.png" alt="Lions Club Logo">
-        <span>BARABOO LIONS CLUB</span>
+    <div class="header-container">
+
+        <div class="brand">
+            <img src="Lions Logo.png" alt="Baraboo Lions Club">
+            <div class="brand-text">BARABOO LIONS CLUB</div>
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#pricing">Registration</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#results">Results</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
     </div>
 </header>
 
 <section class="hero">
-    <div class="hero-content">
 
-        <img src="Strides Logo.png" alt="Strides Against Diabetes Logo" class="hero-logo">
+    <img src="Strides Logo.png" alt="Strides Against Diabetes Logo" class="hero-logo">
 
-        <div class="badge">Registration Opening Soon</div>
+    <h1>Strides Against Diabetes 5K Run/Walk</h1>
 
-        <h1>Strides Against Diabetes 5K Run/Walk</h1>
+    <h2>14th Annual Event</h2>
 
-        <h2>14th Annual Event</h2>
+    <div class="event-info">
+        Saturday, August 8, 2026<br>
+        Sauk County Fairgrounds • Baraboo, Wisconsin
+    </div>
 
-        <div class="event-details">
-            Saturday, August 8, 2026<br>
-            Sauk County Fairgrounds • Baraboo, Wisconsin
+    <div class="status">Registration Opening Soon</div>
+
+</section>
+
+<section class="quick-links">
+
+    <div class="quick-links-grid">
+
+        <div class="quick-link">
+            <h3>Registration</h3>
+            <p>Online registration will open soon.</p>
+        </div>
+
+        <div class="quick-link">
+            <h3>Sponsors</h3>
+            <p>Support diabetes awareness in our community.</p>
+        </div>
+
+        <div class="quick-link">
+            <h3>Results</h3>
+            <p>Current and archived race results.</p>
+        </div>
+
+        <div class="quick-link">
+            <h3>Contact</h3>
+            <p>Questions about the event?</p>
         </div>
 
     </div>
+
 </section>
 
-<section>
+<section id="about">
+
     <h2 class="section-title">About the Event</h2>
 
     <div class="about">
-        The Strides Against Diabetes 5K Run/Walk is an annual community fundraiser
-        supporting diabetes awareness and healthy living initiatives throughout the
-        Baraboo area. Hosted by the Baraboo Lions Club in conjunction with the
-        SJS Sweet Corn Fest, the event welcomes runners, walkers, families, and
-        community supporters of all ages.
+        The Strides Against Diabetes 5K Run/Walk is an annual community fundraiser supporting diabetes awareness and healthy living initiatives throughout the Baraboo area. Hosted by the Baraboo Lions Club in conjunction with the SJS Sweet Corn Fest, the event welcomes runners, walkers, families, and community supporters of all ages.
     </div>
+
 </section>
 
-<section>
+<section id="pricing">
+
     <h2 class="section-title">Registration Pricing</h2>
 
-    <div class="cards">
+    <div class="pricing-grid">
 
-        <div class="card">
+        <div class="price-card">
             <h3>Adult (18+)</h3>
             <div class="price">$25</div>
         </div>
 
-        <div class="card">
-            <h3>Youth (12-17)</h3>
+        <div class="price-card">
+            <h3>Youth (12–17)</h3>
             <div class="price">$20</div>
         </div>
 
-        <div class="card">
+        <div class="price-card">
             <h3>Child (11 & Under)</h3>
             <div class="price">$15</div>
         </div>
 
-        <div class="card">
+        <div class="price-card">
             <h3>Family Registration</h3>
             <div class="price">$75</div>
-            <p>Includes free shirts for the first four registrants</p>
+            <p>Includes free shirts for the first four registrants.</p>
         </div>
 
     </div>
+
 </section>
 
-<section class="schedule">
+<section>
+
     <h2 class="section-title">Event Schedule</h2>
 
-    <div class="schedule-box">
+    <div class="schedule">
 
         <div class="schedule-item">
             <strong>9:00 AM</strong><br>
@@ -310,31 +384,58 @@ footer img{
         </div>
 
     </div>
+
 </section>
 
-<section>
+<section id="sponsors">
+
     <h2 class="section-title">Sponsors</h2>
 
     <div class="placeholder">
-        Sponsor information coming soon.
+        Sponsor information for the 2026 event will be posted here.
+
+        <br><br>
+
+        <a href="mailto:strides@baraboolions.org" class="sponsor-button">
+            Become a Sponsor
+        </a>
     </div>
+
 </section>
 
-<section>
+<section id="results">
+
     <h2 class="section-title">Race Results</h2>
 
     <div class="placeholder">
-        2026 results will be posted here following the event.
+        2026 race results will be posted after the event.
+
+        <br><br>
+
+        Future archive links:
+
+        <br>
+        2026
+        <br>
+        2027
+        <br>
+        2028
     </div>
+
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
+
     <h2 class="section-title">Contact</h2>
 
     <p>
-        Questions about the event?<br><br>
-        <a href="mailto:strides@baraboolions.org">strides@baraboolions.org</a>
+        Questions about the event?
+        <br><br>
+        <a href="mailto:strides@baraboolions.org">
+            strides@baraboolions.org
+        </a>
     </p>
+
 </section>
 
 <footer>
@@ -342,7 +443,8 @@ footer img{
     <img src="Lions Logo.png" alt="Baraboo Lions Club">
 
     <p>
-        © 2026 Baraboo Lions Club<br>
+        © 2026 Baraboo Lions Club
+        <br>
         Strides Against Diabetes 5K Run/Walk
     </p>
 
