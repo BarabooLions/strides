@@ -1,455 +1,127 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Strides Against Diabetes 5K Run/Walk | Baraboo Lions Club</title>
-
+<title>Strides Against Diabetes 5K Run/Walk | Baraboo Lions Club and Foundation</title>
 <style>
 :root{
-    --lions-blue:#0054A6;
-    --lions-gold:#F2C100;
-    --teal:#1F9D94;
-    --light:#f7f9fc;
-    --dark:#1f2937;
+--lions-blue:#0054A6;
+--lions-gold:#F2C100;
+--diabetes:#48A3FF;
+--light:#f7f9fc;
+--dark:#2D3748;
 }
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:var(--dark);
-    line-height:1.6;
-    background:white;
-}
-
-header{
-    background:white;
-    border-bottom:4px solid var(--lions-gold);
-}
-
-.header-container{
-    max-width:1200px;
-    margin:auto;
-    padding:15px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.brand img{
-    height:60px;
-}
-
-.brand-text{
-    font-size:1.3rem;
-    font-weight:bold;
-    color:var(--lions-blue);
-}
-
-nav{
-    display:flex;
-    gap:20px;
-}
-
-nav a{
-    color:var(--lions-blue);
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.hero{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-    text-align:center;
-}
-
-.hero-logo{
-    width:180px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    color:var(--lions-blue);
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-.hero h2{
-    font-weight:normal;
-    margin-bottom:15px;
-}
-
-.event-info{
-    font-size:1.1rem;
-    margin-bottom:20px;
-}
-
-.status{
-    display:inline-block;
-    background:var(--teal);
-    color:white;
-    padding:10px 22px;
-    border-radius:999px;
-    font-weight:bold;
-}
-
-.quick-links{
-    max-width:1100px;
-    margin:auto;
-    padding:10px 20px 50px;
-}
-
-.quick-links-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.quick-link{
-    background:white;
-    border-top:5px solid var(--lions-blue);
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
-    padding:25px;
-    text-align:center;
-}
-
-.quick-link h3{
-    color:var(--lions-blue);
-    margin-bottom:10px;
-}
-
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:50px 20px;
-}
-
-.section-title{
-    color:var(--lions-blue);
-    text-align:center;
-    margin-bottom:30px;
-    font-size:2rem;
-}
-
-.about{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
-    font-size:1.1rem;
-}
-
-.pricing-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.price-card{
-    background:white;
-    border-top:5px solid var(--lions-blue);
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
-    padding:25px;
-    text-align:center;
-}
-
-.price-card h3{
-    color:var(--lions-blue);
-}
-
-.price{
-    font-size:2rem;
-    color:var(--teal);
-    font-weight:bold;
-    margin-top:10px;
-}
-
-.schedule{
-    background:var(--light);
-    border-radius:10px;
-    padding:30px;
-}
-
-.schedule-item{
-    padding:15px 0;
-    border-bottom:1px solid #ddd;
-}
-
-.schedule-item:last-child{
-    border-bottom:none;
-}
-
-.placeholder{
-    background:var(--light);
-    border-radius:10px;
-    padding:30px;
-    text-align:center;
-}
-
-.sponsor-button{
-    display:inline-block;
-    margin-top:20px;
-    background:var(--lions-gold);
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-    padding:12px 24px;
-    border-radius:999px;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact a{
-    color:var(--lions-blue);
-    text-decoration:none;
-    font-weight:bold;
-}
-
-footer{
-    background:var(--lions-blue);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-    margin-top:50px;
-}
-
-footer img{
-    height:70px;
-    margin-bottom:15px;
-}
-
-@media(max-width:768px){
-
-    .header-container{
-        justify-content:center;
-        text-align:center;
-        gap:15px;
-    }
-
-    nav{
-        width:100%;
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .hero h1{
-        font-size:2.2rem;
-    }
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--dark);line-height:1.6}
+header{background:#fff;border-bottom:4px solid var(--lions-gold)}
+.header-container{max-width:1200px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:15px}
+.brand img{height:60px}
+.brand h1{font-size:1.5rem;color:var(--lions-blue)}
+.brand p{color:#555}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--lions-blue);font-weight:bold}
+.hero{max-width:1000px;margin:auto;padding:45px 20px;text-align:center}
+.hero img{width:180px;margin-bottom:20px}
+.hero h2{font-size:3rem;color:var(--lions-blue)}
+.hero h3{font-weight:normal;margin:10px 0 20px}
+.register-btn{display:inline-block;background:var(--diabetes);color:#fff;text-decoration:none;padding:16px 34px;border-radius:999px;font-weight:bold}
+section{max-width:1100px;margin:auto;padding:50px 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border-top:5px solid var(--diabetes);padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.card h3{color:var(--lions-blue);margin-bottom:10px}
+.card a{display:inline-block;margin-top:18px;background:var(--lions-blue);color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px}
+.section-title{text-align:center;color:var(--lions-blue);font-size:2rem;margin-bottom:30px}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.price-card{background:#fff;border-top:5px solid var(--diabetes);padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
+.price{font-size:2rem;color:var(--diabetes);font-weight:bold;margin-top:10px}
+.schedule{background:var(--light);padding:30px;border-radius:12px}
+.schedule div{padding:12px 0;border-bottom:1px solid #ddd}
+.schedule div:last-child{border-bottom:none}
+footer{background:var(--lions-blue);color:#fff;text-align:center;padding:45px 20px;margin-top:60px}
+footer img{height:80px;margin-bottom:20px}
+footer .statement{max-width:700px;margin:20px auto;font-style:italic}
+@media(max-width:768px){.header-container{justify-content:center;text-align:center}.brand{flex-direction:column}.hero h2{font-size:2.2rem}}
 </style>
 </head>
-
 <body>
-
 <header>
-    <div class="header-container">
-
-        <div class="brand">
-            <img src="Lions Logo.png" alt="Baraboo Lions Club">
-            <div class="brand-text">BARABOO LIONS CLUB</div>
-        </div>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#pricing">Registration</a>
-            <a href="#sponsors">Sponsors</a>
-            <a href="#results">Results</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-    </div>
+<div class="header-container">
+<div class="brand">
+<img src="Lions Logo.png" alt="Baraboo Lions Club and Foundation">
+<div>
+<h1>Baraboo Lions Club and Foundation</h1>
+<p>Serving Baraboo Since 1942</p>
+</div>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="registration.html">Register</a>
+<a href="#sponsors">Sponsors</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
 <section class="hero">
-
-    <img src="Strides Logo.png" alt="Strides Against Diabetes Logo" class="hero-logo">
-
-    <h1>Strides Against Diabetes 5K Run/Walk</h1>
-
-    <h2>14th Annual Event</h2>
-
-    <div class="event-info">
-        Saturday, August 8, 2026<br>
-        Sauk County Fairgrounds • Baraboo, Wisconsin
-    </div>
-
-    <div class="status">Registration Opening Soon</div>
-
-</section>
-
-<section class="quick-links">
-
-    <div class="quick-links-grid">
-
-        <div class="quick-link">
-            <h3>Registration</h3>
-            <p>Online registration will open soon.</p>
-        </div>
-
-        <div class="quick-link">
-            <h3>Sponsors</h3>
-            <p>Support diabetes awareness in our community.</p>
-        </div>
-
-        <div class="quick-link">
-            <h3>Results</h3>
-            <p>Current and archived race results.</p>
-        </div>
-
-        <div class="quick-link">
-            <h3>Contact</h3>
-            <p>Questions about the event?</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="about">
-
-    <h2 class="section-title">About the Event</h2>
-
-    <div class="about">
-        The Strides Against Diabetes 5K Run/Walk is an annual community fundraiser supporting diabetes awareness and healthy living initiatives throughout the Baraboo area. Hosted by the Baraboo Lions Club in conjunction with the SJS Sweet Corn Fest, the event welcomes runners, walkers, families, and community supporters of all ages.
-    </div>
-
-</section>
-
-<section id="pricing">
-
-    <h2 class="section-title">Registration Pricing</h2>
-
-    <div class="pricing-grid">
-
-        <div class="price-card">
-            <h3>Adult (18+)</h3>
-            <div class="price">$25</div>
-        </div>
-
-        <div class="price-card">
-            <h3>Youth (12–17)</h3>
-            <div class="price">$20</div>
-        </div>
-
-        <div class="price-card">
-            <h3>Child (11 & Under)</h3>
-            <div class="price">$15</div>
-        </div>
-
-        <div class="price-card">
-            <h3>Family Registration</h3>
-            <div class="price">$75</div>
-            <p>Includes free shirts for the first four registrants.</p>
-        </div>
-
-    </div>
-
+<img src="Strides Logo.png" alt="Strides Against Diabetes">
+<h2>Strides Against Diabetes 5K Run/Walk</h2>
+<h3>14th Annual Event</h3>
+<p><strong>Saturday, August 8, 2026</strong><br>Sauk County Fairgrounds • Baraboo, Wisconsin</p><br>
+<a class="register-btn" href="registration.html">Register Now</a>
 </section>
 
 <section>
+<div class="cards">
+<div class="card"><h3>Register</h3><p>Complete the online registration form and secure payment.</p><a href="registration.html">Get Started</a></div>
+<div class="card"><h3>Sponsors</h3><p>Help support diabetes awareness and healthy living in our community.</p><a href="#sponsors">Learn More</a></div>
+<div class="card"><h3>Race Information</h3><p>View pricing, schedule, and important event details.</p><a href="#pricing">View Details</a></div>
+<div class="card"><h3>Contact</h3><p>Questions? We're here to help.</p><a href="#contact">Contact Us</a></div>
+</div>
+</section>
 
-    <h2 class="section-title">Event Schedule</h2>
+<section id="about">
+<h2 class="section-title">About the Event</h2>
+<p style="max-width:850px;margin:auto;text-align:center;">Hosted by the Baraboo Lions Club and Foundation in conjunction with the SJS Sweet Corn Fest, the Strides Against Diabetes 5K Run/Walk brings the community together to support diabetes awareness and healthy living.</p>
+</section>
 
-    <div class="schedule">
+<section id="pricing">
+<h2 class="section-title">Registration Pricing</h2>
+<div class="pricing">
+<div class="price-card"><h3>Adult (18+)</h3><div class="price">$25</div></div>
+<div class="price-card"><h3>Youth (12–17)</h3><div class="price">$20</div></div>
+<div class="price-card"><h3>Child (11 & Under)</h3><div class="price">$15</div></div>
+<div class="price-card"><h3>Family</h3><div class="price">$75</div><p>First four participants receive one complimentary event T-shirt each.</p></div>
+</div>
+</section>
 
-        <div class="schedule-item">
-            <strong>9:00 AM</strong><br>
-            Registration & Packet Pick-Up
-        </div>
-
-        <div class="schedule-item">
-            <strong>9:30 AM</strong><br>
-            Race Begins
-        </div>
-
-        <div class="schedule-item">
-            <strong>Location</strong><br>
-            Sauk County Fairgrounds, Baraboo, Wisconsin
-        </div>
-
-    </div>
-
+<section>
+<h2 class="section-title">Event Schedule</h2>
+<div class="schedule">
+<div><strong>9:00 AM</strong><br>Registration & Packet Pick-Up</div>
+<div><strong>9:30 AM</strong><br>Race Begins</div>
+<div><strong>Location</strong><br>Sauk County Fairgrounds, Baraboo, Wisconsin</div>
+</div>
 </section>
 
 <section id="sponsors">
-
-    <h2 class="section-title">Sponsors</h2>
-
-    <div class="placeholder">
-        Sponsor information for the 2026 event will be posted here.
-
-        <br><br>
-
-        <a href="mailto:strides@baraboolions.org" class="sponsor-button">
-            Become a Sponsor
-        </a>
-    </div>
-
+<h2 class="section-title">Sponsors</h2>
+<p style="text-align:center">Interested in sponsoring the event?<br><br><a class="register-btn" href="mailto:strides@baraboolions.org">Become a Sponsor</a></p>
 </section>
 
-<section id="results">
-
-    <h2 class="section-title">Race Results</h2>
-
-    <div class="placeholder">
-        2026 race results will be posted after the event.
-
-        <br><br>
-
-        Future archive links:
-
-        <br>
-        2026
-        <br>
-        2027
-        <br>
-        2028
-    </div>
-
-</section>
-
-<section id="contact" class="contact">
-
-    <h2 class="section-title">Contact</h2>
-
-    <p>
-        Questions about the event?
-        <br><br>
-        <a href="mailto:strides@baraboolions.org">
-            strides@baraboolions.org
-        </a>
-    </p>
-
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<p style="text-align:center">Questions about the event?<br><br><a href="mailto:strides@baraboolions.org">strides@baraboolions.org</a></p>
 </section>
 
 <footer>
-
-    <img src="Lions Logo.png" alt="Baraboo Lions Club">
-
-    <p>
-        © 2026 Baraboo Lions Club
-        <br>
-        Strides Against Diabetes 5K Run/Walk
-    </p>
-
+<img src="Lions Logo.png" alt="Baraboo Lions Club and Foundation">
+<h3>Baraboo Lions Club and Foundation</h3>
+<p>Serving Baraboo Since 1942</p>
+<div class="statement">100% of funds raised from the public go directly to community causes. Club administrative expenses are funded entirely through member dues.</div>
+<p><a style="color:white" href="mailto:strides@baraboolions.org">strides@baraboolions.org</a></p>
+<p style="margin-top:20px">© 2026 Baraboo Lions Club and Foundation</p>
 </footer>
-
 </body>
 </html>
-```
