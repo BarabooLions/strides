@@ -43,6 +43,54 @@ section{max-width:1100px;margin:auto;padding:50px 20px}
 footer{background:var(--lions-blue);color:#fff;text-align:center;padding:45px 20px;margin-top:60px}
 footer img{height:80px;margin-bottom:20px}
 footer .statement{max-width:700px;margin:20px auto;font-style:italic}
+/* ===========================
+   Sponsors
+=========================== */
+
+.sponsor-level{
+    background:white;
+    border-top:5px solid var(--lions-blue);
+    border-radius:12px;
+    padding:30px;
+    margin-top:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.sponsor-level h3{
+    color:var(--lions-blue);
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.sponsor-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    align-items:center;
+}
+
+.sponsor{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sponsor img{
+    max-width:100%;
+    max-height:90px;
+    object-fit:contain;
+    transition:.2s;
+}
+
+.sponsor img:hover{
+    transform:scale(1.05);
+}
+
+.sponsor-name{
+    text-align:center;
+    font-weight:bold;
+    color:var(--lions-blue);
+}
 @media(max-width:768px){.header-container{justify-content:center;text-align:center}.brand{flex-direction:column}.hero h2{font-size:2.2rem}}
 </style>
 </head>
@@ -139,17 +187,26 @@ footer .statement{max-width:700px;margin:20px auto;font-style:italic}
 </section>
 
 <section id="sponsors">
-    <h2 class="section-title">Sponsors</h2>
 
-    <p style="text-align:center">
-        Interested in sponsoring the event?
-        <br><br>
+<h2 class="section-title">Community Sponsors</h2>
 
-        <a class="register-btn"
-           href="mailto:baraboolions@gmail.com?subject=2026%20Strides%20Against%20Diabetes%205K%20Sponsorship%20Inquiry">
-            Become a Sponsor
-        </a>
-    </p>
+<p style="text-align:center;max-width:800px;margin:auto;">
+The Strides Against Diabetes 5K Run/Walk is made possible through the generosity of local businesses and organizations. Thank you to our community partners for helping improve the health and well-being of our community.
+</p>
+
+<div id="sponsorContainer" style="margin-top:40px;"></div>
+
+<p style="text-align:center;margin-top:50px;">
+
+<a class="register-btn"
+href="mailto:baraboolions@gmail.com?subject=2026%20Strides%20Against%20Diabetes%205K%20Sponsorship%20Inquiry">
+
+Become a Sponsor
+
+</a>
+
+</p>
+
 </section>
 
 <section id="contact">
@@ -200,5 +257,65 @@ Club administrative expenses are funded entirely through member dues.
 <p>© 2026 Baraboo Lions Club and Foundation</p>
 
 </footer>
+<script>
+
+const sponsorLevels = [
+    {id:"platinum",title:"Platinum Sponsors"},
+    {id:"gold",title:"Gold Sponsors"},
+    {id:"silver",title:"Silver Sponsors"},
+    {id:"bronze",title:"Bronze Sponsors"},
+    {id:"inkind",title:"In-Kind Sponsors"}
+];
+
+fetch("sponsors.json")
+.then(r=>r.json())
+.then(data=>{
+
+const container=document.getElementById("sponsorContainer");
+
+sponsorLevels.forEach(level=>{
+
+const sponsors=data.filter(s=>s.level===level.id);
+
+if(sponsors.length===0) return;
+
+const card=document.createElement("div");
+card.className="sponsor-level";
+
+card.innerHTML=`<h3>${level.title}</h3>`;
+
+const grid=document.createElement("div");
+grid.className="sponsor-grid";
+
+sponsors.forEach(sponsor=>{
+
+const div=document.createElement("div");
+div.className="sponsor";
+
+const image=`<img src="sponsors/${sponsor.logo}" alt="${sponsor.name}">`;
+
+if(sponsor.url){
+
+div.innerHTML=`<a href="${sponsor.url}" target="_blank">${image}</a>`;
+
+}else{
+
+div.innerHTML=image;
+
+}
+
+grid.appendChild(div);
+
+});
+
+card.appendChild(grid);
+
+container.appendChild(card);
+
+});
+
+});
+
+</script>
 </body>
 </html>
