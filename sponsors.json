@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Available",
+        "level": "platinum",
+        "logo": "placeholder.png",
+        "url": ""
+    },
+    {
+        "name": "Available",
+        "level": "gold",
+        "logo": "placeholder.png",
+        "url": ""
+    },
+    {
+        "name": "Available",
+        "level": "silver",
+        "logo": "placeholder.png",
+        "url": ""
+    },
+    {
+        "name": "Available",
+        "level": "bronze",
+        "logo": "placeholder.png",
+        "url": ""
+    },
+    {
+        "name": "In-Kind Donor",
+        "level": "inkind",
+        "logo": "placeholder.png",
+        "url": ""
+    }
+]
