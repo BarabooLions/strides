@@ -38,7 +38,7 @@
     {
         "name": "DeMars Plumbing",
         "level": "silver",
-        "logo": "demars-plulmbing.jpeg",
+        "logo": "demars-plumbing.jpeg",
         "url": "https://demarsplumbing.com/"
     },
     {
@@ -54,33 +54,63 @@
         "url": "https://www.donlarson.com/"
     },
     {
-        "name": "Downtowner Tavern",
+        "name": "Downtowner Bar & Grill",
         "level": "gold",
-        "logo": "",
+        "logo": "downtowner.png",
         "url": "https://www.facebook.com/downtownerbar"
     },
     {
-        "name": "",
-        "level": "",
-        "logo": "",
+        "name": "Hill-Dale Veterinary Care",
+        "level": "gold",
+        "logo": "hill-dale-vet.png",
+        "url": "https://www.hill-dale.com/"
+    },
+    {
+        "name": "Hill's Wiring",
+        "level": "silver",
+        "logo": "hills-wiring.jpg",
+        "url": "https://www.facebook.com/profile.php?id=100057269207675"
+    },
+    {
+        "name": "Ho-Chunk Gaming",
+        "level": "platinum",
+        "logo": "ho-chunk-gaming.png",
+        "url": "https://ho-chunknation.com/"
+    },
+    {
+        "name": "Edwards Ice Cream",
+        "level": "bronze",
+        "logo": "edwards-ice-cream.png",
         "url": ""
     },
     {
-        "name": "",
-        "level": "",
-        "logo": "",
-        "url": ""
+        "name": "Minuteman Press",
+        "level": "silver",
+        "logo": "minuteman-press.jpg",
+        "url": "https://www.baraboo.minutemanpress.com/"
     },
     {
-        "name": "",
-        "level": "",
-        "logo": "",
-        "url": ""
+        "name": "Redlin-Ertz Funeral Home",
+        "level": "silver",
+        "logo": "redlin-ertz-funeral-home.png",
+        "url": "https://redlin-ertzfuneralhome.com/"
     },
     {
-        "name": "",
-        "level": "",
-        "logo": "",
-        "url": ""
+        "name": "Seneca Foods",
+        "level": "gold",
+        "logo": "seneca.png",
+        "url": "https://www.senecafoods.com/"
+    },
+    {
+        "name": St. Paul's Lutheran Church"",
+        "level": "silver",
+        "logo": "st-pauls.png",
+        "url": "https://www.stpaulsbaraboo.org/our-mission"
+    },
+    {
+        "name": "TRICOR Insurance",
+        "level": "silver",
+        "logo": "tricor.png",
+        "url": "https://www.tricorinsurance.com/baraboo-insurance-office"
     }
 ]
