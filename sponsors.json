@@ -16,5 +16,71 @@
         "level": "inkind",
         "logo": "kalahari.png",
         "url": "https://www.kalahariresorts.com/wisconsin/"
+    },
+    {
+        "name": "Baraboo State Bank",
+        "level": "bronze",
+        "logo": "baraboo-state-bank.png",
+        "url": "https://www.baraboobank.com/"
+    },
+    {
+        "name": "Boardman-Clark Law",
+        "level": "silver",
+        "logo": "boardman-clark.jpeg",
+        "url": "https://www.boardmanclark.com/"
+    },
+    {
+        "name": "Circus World Museum",
+        "level": "inkind",
+        "logo": "circus-world.jpg",
+        "url": "https://circusworld.wisconsinhistory.org/"
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
+    },
+    {
+        "name": "",
+        "level": "",
+        "logo": "",
+        "url": ""
     }
 ]
