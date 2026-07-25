@@ -10,5 +10,11 @@
         "level": "inkind",
         "logo": "akita-box.png",
         "url": "https://home.akitabox.com/"
+    },
+    {
+        "name": "Kalahari Resorts",
+        "level": "inkind",
+        "logo": "kalahari.png",
+        "url": "https://www.kalahariresorts.com/wisconsin/"
     }
 ]
